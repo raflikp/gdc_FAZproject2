@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://ch2tfopcgh8sh"]
+
+[ext_resource type="Script" path="res://dragndrop.gd" id="1_jru8c"]
+[ext_resource type="Texture2D" uid="uid://b0n5y2sym476r" path="res://Bed.png" id="2_lgwp4"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_jru8c")
+
+[node name="Icon" type="Sprite2D" parent="."]
+position = Vector2(5, 4)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_lgwp4")
+offset = Vector2(125, 125)
+
+[node name="Area2D" type="Area2D" parent="Icon"]
+position = Vector2(-5, -4)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Icon/Area2D"]
+polygon = PackedVector2Array(-11, 92, -9, -70, 89, -70, 89, 88)
+
+[connection signal="input_event" from="Icon/Area2D" to="." method="_on_area_2d_input_event"]

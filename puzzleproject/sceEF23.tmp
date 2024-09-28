@@ -1,0 +1,98 @@
+[gd_scene load_steps=9 format=3 uid="uid://2wc1bqb2qqnh"]
+
+[ext_resource type="PackedScene" uid="uid://qxc87q0q1yb" path="res://drop_zone.tscn" id="1_03bls"]
+[ext_resource type="PackedScene" uid="uid://dygi3n3btona" path="res://chairFurniture.tscn" id="2_0oxhm"]
+[ext_resource type="PackedScene" uid="uid://bt6fwiwtbrab1" path="res://wardrobe.tscn" id="3_gihty"]
+[ext_resource type="Texture2D" uid="uid://sdtus6ihhu1l" path="res://Guide.png" id="4_bpua4"]
+[ext_resource type="Texture2D" uid="uid://bn478cobafkus" path="res://Background.png" id="4_uuyse"]
+[ext_resource type="Texture2D" uid="uid://bbu45h3egrbjf" path="res://room.png" id="5_qu0xt"]
+[ext_resource type="PackedScene" uid="uid://cxp6g7goy1qb2" path="res://tableTry.tscn" id="6_45yiw"]
+[ext_resource type="PackedScene" uid="uid://vsrngj7dtcb7" path="res://rotate_icon.tscn" id="8_jjxvr"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="drop_zone" parent="." instance=ExtResource("1_03bls")]
+z_index = -1
+position = Vector2(508, 219)
+
+[node name="drop_zone2" parent="." instance=ExtResource("1_03bls")]
+z_index = -1
+position = Vector2(618, 219)
+
+[node name="drop_zone3" parent="." instance=ExtResource("1_03bls")]
+z_index = -1
+position = Vector2(545, 219)
+
+[node name="drop_zone4" parent="." instance=ExtResource("1_03bls")]
+z_index = -1
+position = Vector2(581, 218)
+
+[node name="drop_zone5" parent="." instance=ExtResource("1_03bls")]
+z_index = -1
+position = Vector2(653, 219)
+
+[node name="drop_zone6" parent="." instance=ExtResource("1_03bls")]
+z_index = -1
+position = Vector2(617, 254)
+
+[node name="drop_zone7" parent="." instance=ExtResource("1_03bls")]
+z_index = -1
+position = Vector2(545, 254)
+
+[node name="drop_zone8" parent="." instance=ExtResource("1_03bls")]
+z_index = -1
+position = Vector2(509, 254)
+
+[node name="drop_zone9" parent="." instance=ExtResource("1_03bls")]
+z_index = -1
+position = Vector2(509, 289)
+
+[node name="drop_zone10" parent="." instance=ExtResource("1_03bls")]
+z_index = -1
+position = Vector2(545, 289)
+
+[node name="drop_zone11" parent="." instance=ExtResource("1_03bls")]
+z_index = -1
+position = Vector2(581, 289)
+
+[node name="drop_zone12" parent="." instance=ExtResource("1_03bls")]
+z_index = -1
+position = Vector2(654, 289)
+
+[node name="Node2D" parent="." instance=ExtResource("2_0oxhm")]
+position = Vector2(342, 333)
+
+[node name="Node2D2" parent="." instance=ExtResource("2_0oxhm")]
+position = Vector2(359, 422)
+
+[node name="Node2D" parent="Node2D2" instance=ExtResource("3_gihty")]
+position = Vector2(448, -22)
+
+[node name="Guide" type="Sprite2D" parent="."]
+self_modulate = Color(1, 1, 1, 0.313726)
+z_index = -9
+position = Vector2(581.177, 324)
+scale = Vector2(0.601899, 0.583333)
+texture = ExtResource("4_bpua4")
+metadata/_edit_lock_ = true
+
+[node name="Background" type="Sprite2D" parent="."]
+z_index = -15
+position = Vector2(577, 323.5)
+scale = Vector2(0.601042, 0.599074)
+texture = ExtResource("4_uuyse")
+metadata/_edit_lock_ = true
+
+[node name="Room" type="Sprite2D" parent="."]
+z_index = -10
+position = Vector2(585.583, 325.5)
+scale = Vector2(0.588976, 0.580555)
+texture = ExtResource("5_qu0xt")
+metadata/_edit_lock_ = true
+
+[node name="Node2D3" parent="." instance=ExtResource("6_45yiw")]
+position = Vector2(378, 272)
+
+[node name="Node2D4" parent="." instance=ExtResource("8_jjxvr")]
+position = Vector2(1035, 526)
+scale = Vector2(0.075, 0.075)

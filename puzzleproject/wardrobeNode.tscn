@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://bt6fwiwtbrab1"]
+
+[ext_resource type="Script" path="res://dragndrop.gd" id="1_qaa4d"]
+[ext_resource type="Texture2D" uid="uid://bsi5jmxlijwmw" path="res://Wardrobe.png" id="2_ukmpj"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_qaa4d")
+
+[node name="Icon" type="Sprite2D" parent="."]
+position = Vector2(5, 4)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_ukmpj")
+offset = Vector2(55, -180)
+
+[node name="Area2D" type="Area2D" parent="Icon"]
+position = Vector2(-5, -4)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Icon/Area2D"]
+polygon = PackedVector2Array(-79, 28, -81, -14, 81, -14, 81, 26)
+
+[connection signal="input_event" from="Icon/Area2D" to="." method="_on_area_2d_input_event"]

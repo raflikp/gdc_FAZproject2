@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://dlj2noecwunyu"]
+
+[ext_resource type="Script" path="res://Global/bgm_all.gd" id="1_ca45j"]
+[ext_resource type="AudioStream" uid="uid://2ut6oqr3y4vt" path="res://puzzle_2beta2.mp3" id="1_i2vqu"]
+
+[node name="BgmAll" type="AudioStreamPlayer2D"]
+stream = ExtResource("1_i2vqu")
+autoplay = true
+script = ExtResource("1_ca45j")

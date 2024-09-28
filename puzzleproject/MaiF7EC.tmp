@@ -1,0 +1,160 @@
+[gd_scene load_steps=13 format=3 uid="uid://2wc1bqb2qqnh"]
+
+[ext_resource type="Script" path="res://nodeManager.gd" id="1_2cl5p"]
+[ext_resource type="PackedScene" uid="uid://qxc87q0q1yb" path="res://drop_zone.tscn" id="1_em5f0"]
+[ext_resource type="PackedScene" uid="uid://dygi3n3btona" path="res://chairNode.tscn" id="2_rj5nx"]
+[ext_resource type="PackedScene" uid="uid://bt6fwiwtbrab1" path="res://wardrobeNode.tscn" id="3_ewkub"]
+[ext_resource type="PackedScene" uid="uid://cxp6g7goy1qb2" path="res://tableNode.tscn" id="4_2s3n7"]
+[ext_resource type="Texture2D" uid="uid://sdtus6ihhu1l" path="res://Guide.png" id="5_6ckb8"]
+[ext_resource type="Texture2D" uid="uid://bn478cobafkus" path="res://Background.png" id="6_f2lxv"]
+[ext_resource type="Texture2D" uid="uid://bbu45h3egrbjf" path="res://room.png" id="7_mv62s"]
+[ext_resource type="PackedScene" uid="uid://ch2tfopcgh8sh" path="res://bedNode.tscn" id="8_byvo4"]
+[ext_resource type="PackedScene" uid="uid://byfdc4s5rq86t" path="res://bg_music.tscn" id="9_323bo"]
+[ext_resource type="PackedScene" uid="uid://bcl8b87fr4xub" path="res://exit.tscn" id="11_51aob"]
+[ext_resource type="PackedScene" uid="uid://10kfsex5ykuk" path="res://rotate.tscn" id="12_y7xbx"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_2cl5p")
+
+[node name="drop_zone" parent="." instance=ExtResource("1_em5f0")]
+z_index = -1
+position = Vector2(508, 219)
+
+[node name="drop_zone2" parent="." instance=ExtResource("1_em5f0")]
+z_index = -1
+position = Vector2(618, 219)
+
+[node name="drop_zone3" parent="." instance=ExtResource("1_em5f0")]
+z_index = -1
+position = Vector2(545, 219)
+
+[node name="drop_zone4" parent="." instance=ExtResource("1_em5f0")]
+z_index = -1
+position = Vector2(581, 218)
+
+[node name="drop_zone5" parent="." instance=ExtResource("1_em5f0")]
+z_index = -1
+position = Vector2(653, 219)
+
+[node name="drop_zone6" parent="." instance=ExtResource("1_em5f0")]
+z_index = -1
+position = Vector2(617, 254)
+
+[node name="drop_zone7" parent="." instance=ExtResource("1_em5f0")]
+z_index = -1
+position = Vector2(545, 254)
+
+[node name="drop_zone8" parent="." instance=ExtResource("1_em5f0")]
+z_index = -1
+position = Vector2(509, 254)
+
+[node name="drop_zone9" parent="." instance=ExtResource("1_em5f0")]
+z_index = -1
+position = Vector2(509, 289)
+
+[node name="drop_zone10" parent="." instance=ExtResource("1_em5f0")]
+z_index = -1
+position = Vector2(545, 289)
+
+[node name="drop_zone11" parent="." instance=ExtResource("1_em5f0")]
+z_index = -1
+position = Vector2(581, 289)
+
+[node name="drop_zone12" parent="." instance=ExtResource("1_em5f0")]
+z_index = -1
+position = Vector2(654, 289)
+
+[node name="drop_zone16" parent="." instance=ExtResource("1_em5f0")]
+z_index = -1
+position = Vector2(509, 323)
+
+[node name="drop_zone17" parent="." instance=ExtResource("1_em5f0")]
+z_index = -1
+position = Vector2(619, 323)
+
+[node name="drop_zone19" parent="." instance=ExtResource("1_em5f0")]
+z_index = -1
+position = Vector2(582, 322)
+
+[node name="drop_zone20" parent="." instance=ExtResource("1_em5f0")]
+z_index = -1
+position = Vector2(654, 323)
+
+[node name="drop_zone21" parent="." instance=ExtResource("1_em5f0")]
+z_index = -1
+position = Vector2(618, 358)
+
+[node name="drop_zone22" parent="." instance=ExtResource("1_em5f0")]
+z_index = -1
+position = Vector2(546, 358)
+
+[node name="drop_zone24" parent="." instance=ExtResource("1_em5f0")]
+z_index = -1
+position = Vector2(510, 393)
+
+[node name="drop_zone25" parent="." instance=ExtResource("1_em5f0")]
+z_index = -1
+position = Vector2(546, 393)
+
+[node name="drop_zone31" parent="." instance=ExtResource("1_em5f0")]
+z_index = -1
+position = Vector2(509, 429)
+
+[node name="drop_zone32" parent="." instance=ExtResource("1_em5f0")]
+z_index = -1
+position = Vector2(545, 429)
+
+[node name="drop_zone33" parent="." instance=ExtResource("1_em5f0")]
+z_index = -1
+position = Vector2(581, 429)
+
+[node name="Node2D" parent="." instance=ExtResource("2_rj5nx")]
+z_index = 5
+position = Vector2(395, 451)
+
+[node name="Node2D4" parent="." instance=ExtResource("3_ewkub")]
+z_index = 2
+position = Vector2(303, 303)
+
+[node name="Node2D2" parent="." instance=ExtResource("2_rj5nx")]
+z_index = 5
+position = Vector2(352, 383)
+
+[node name="Node2D3" parent="." instance=ExtResource("4_2s3n7")]
+z_index = 7
+position = Vector2(387, 262)
+
+[node name="Node2D5" parent="." instance=ExtResource("8_byvo4")]
+position = Vector2(331, 145)
+
+[node name="Guide" type="Sprite2D" parent="."]
+visible = false
+self_modulate = Color(1, 1, 1, 0.313726)
+z_index = -9
+position = Vector2(581.177, 324)
+scale = Vector2(0.601899, 0.583333)
+texture = ExtResource("5_6ckb8")
+metadata/_edit_lock_ = true
+
+[node name="Background" type="Sprite2D" parent="."]
+z_index = -15
+position = Vector2(577, 323.5)
+scale = Vector2(0.601042, 0.599074)
+texture = ExtResource("6_f2lxv")
+metadata/_edit_lock_ = true
+
+[node name="Room" type="Sprite2D" parent="."]
+z_index = -10
+position = Vector2(585.583, 325.5)
+scale = Vector2(0.588976, 0.580555)
+texture = ExtResource("7_mv62s")
+metadata/_edit_lock_ = true
+
+[node name="AudioStreamPlayer2D" parent="." instance=ExtResource("9_323bo")]
+
+[node name="Node2D6" parent="." instance=ExtResource("11_51aob")]
+position = Vector2(1047, 596)
+
+[node name="Node2D7" parent="." instance=ExtResource("12_y7xbx")]
+position = Vector2(1058, 522)
+scale = Vector2(0.04, 0.04)
