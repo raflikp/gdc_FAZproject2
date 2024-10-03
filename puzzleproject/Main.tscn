@@ -218,10 +218,11 @@ metadata/_edit_lock_ = true
 position = Vector2(785, 424)
 
 [node name="Button" type="Button" parent="."]
-offset_left = 983.0
-offset_top = 563.0
-offset_right = 1129.0
-offset_bottom = 611.0
+offset_left = 831.0
+offset_top = 480.0
+offset_right = 977.0
+offset_bottom = 528.0
+scale = Vector2(0.72, 0.72)
 theme_override_fonts/font = ExtResource("13_nr7we")
 theme_override_font_sizes/font_size = 35
 theme_override_styles/normal = SubResource("StyleBoxFlat_aahpi")
@@ -229,18 +230,17 @@ text = "Finish Level"
 script = ExtResource("11_7nyf4")
 
 [node name="gameFinish" type="CanvasLayer" parent="."]
-visible = false
 script = ExtResource("13_b7lcr")
 
 [node name="Label" type="Label" parent="gameFinish"]
 z_index = 15
-offset_left = 366.0
-offset_top = 148.0
-offset_right = 787.0
-offset_bottom = 299.0
+offset_left = 360.0
+offset_top = 197.0
+offset_right = 781.0
+offset_bottom = 348.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("13_nr7we")
-theme_override_font_sizes/font_size = 150
+theme_override_font_sizes/font_size = 100
 text = "Good Job"
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -251,33 +251,36 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -497.0
-offset_top = -423.0
-offset_right = 510.0
-offset_bottom = 489.0
+offset_left = -298.0
+offset_top = -244.0
+offset_right = 709.0
+offset_bottom = 668.0
 grow_horizontal = 2
 grow_vertical = 2
+scale = Vector2(0.587667, 0.587667)
 theme_override_styles/panel = SubResource("StyleBoxTexture_a20bq")
 
 [node name="retry" type="Button" parent="gameFinish"]
 process_mode = 3
-offset_left = 457.0
+offset_left = 486.0
 offset_top = 337.0
-offset_right = 701.0
+offset_right = 730.0
 offset_bottom = 413.0
+scale = Vector2(0.760213, 0.760213)
 theme_override_fonts/font = ExtResource("13_nr7we")
-theme_override_font_sizes/font_size = 75
+theme_override_font_sizes/font_size = 50
 theme_override_styles/normal = SubResource("StyleBoxFlat_3btxs")
 text = "Retry"
 
 [node name="Keluar" type="Button" parent="gameFinish"]
 process_mode = 3
-offset_left = 460.0
-offset_top = 453.0
-offset_right = 706.0
-offset_bottom = 501.0
+offset_left = 488.0
+offset_top = 408.0
+offset_right = 734.0
+offset_bottom = 456.0
+scale = Vector2(0.744204, 0.744204)
 theme_override_fonts/font = ExtResource("13_nr7we")
-theme_override_font_sizes/font_size = 40
+theme_override_font_sizes/font_size = 30
 theme_override_styles/normal = SubResource("StyleBoxFlat_g1017")
 text = "Keluar"
 
@@ -373,21 +376,21 @@ script = ExtResource("19_g873k")
 
 [node name="Pause" type="TextureButton" parent="."]
 layout_direction = 1
-offset_left = 11.0
-offset_top = 11.0
-offset_right = 1389.0
-offset_bottom = 1389.0
-scale = Vector2(0.0639726, 0.0639726)
+offset_left = 214.0
+offset_top = 122.0
+offset_right = 1592.0
+offset_bottom = 1500.0
+scale = Vector2(0.0502581, 0.0502581)
 texture_normal = ExtResource("12_bg5i8")
 texture_hover = ExtResource("13_s030t")
 script = ExtResource("13_sj1gd")
 
 [node name="Visible" type="TextureButton" parent="."]
-offset_left = -2.0
-offset_top = 510.0
-offset_right = 3473.0
-offset_bottom = 3985.0
-scale = Vector2(0.0474773, 0.0474773)
+offset_left = 192.0
+offset_top = 444.0
+offset_right = 3667.0
+offset_bottom = 3919.0
+scale = Vector2(0.0343318, 0.0353432)
 texture_normal = ExtResource("15_aiq4f")
 texture_hover = ExtResource("16_utksj")
 stretch_mode = 0
@@ -400,18 +403,24 @@ metadata/_edit_lock_ = true
 
 [node name="wood_audioEffect" parent="." instance=ExtResource("26_1gxbs")]
 visible = false
+volume_db = 0.0
 
 [node name="buttonClick" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("27_70y4m")
-volume_db = -15.0
 
 [node name="rotateEffect" type="AudioStreamPlayer2D" parent="."]
 stream = SubResource("AudioStreamRandomizer_dxd3w")
-volume_db = -15.0
 
 [node name="finish" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("28_hlakl")
+volume_db = 20.0
 pitch_scale = 2.0
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(577, 323)
+scale = Vector2(1, 3.02251)
+zoom = Vector2(1.5, 1.5)
+limit_smoothed = true
 
 [connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
 [connection signal="pressed" from="gameFinish/retry" to="gameFinish" method="_on_retry_pressed"]

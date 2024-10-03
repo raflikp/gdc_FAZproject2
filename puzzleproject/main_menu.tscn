@@ -145,7 +145,6 @@ text = "Exit"
 
 [node name="buttonClick" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("10_4scvo")
-volume_db = -15.0
 
 [connection signal="pressed" from="Credits/TextureButton" to="Credits" method="_on_texture_button_pressed"]
 [connection signal="pressed" from="VBoxContainer/Start" to="." method="_on_start_pressed"]
